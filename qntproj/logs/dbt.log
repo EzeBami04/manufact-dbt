@@ -1,0 +1,239 @@
+[0m04:04:14.736508 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BBA9278A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BBA91B1ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BBA9282610>]}
+
+
+============================== 04:04:14.744514 | 475b9518-44bc-41d0-b0ef-ca645243e622 ==============================
+[0m04:04:14.744514 [info ] [MainThread]: Running with dbt=1.12.3
+[0m04:04:14.746513 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Bamidele\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt ', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'c:\\Users\\Bamidele\\Documents\\manufact\\manufact-dbt\\qntproj\\logs'}
+[0m04:04:15.200414 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '475b9518-44bc-41d0-b0ef-ca645243e622', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BBA93B7DD0>]}
+[0m04:04:15.274707 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m04:04:15.280703 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m04:04:15.284704 [debug] [MainThread]: Command `cli deps` succeeded at 04:04:15.284704 after 0.81 seconds
+[0m04:04:15.286704 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BBA9302490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BBA9278150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BBA91C5E50>]}
+[0m04:04:15.288708 [debug] [MainThread]: Flushing usage events
+[0m04:04:16.438177 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:21:02.760415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB05622090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB05623E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB05621510>]}
+
+
+============================== 04:21:02.769416 | e2f0bde0-eb7c-49d1-89f2-2a790b0d8daa ==============================
+[0m04:21:02.769416 [info ] [MainThread]: Running with dbt=1.12.3
+[0m04:21:02.772417 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Bamidele\\.dbt', 'invocation_command': 'dbt test --select stg_customers', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\Bamidele\\Documents\\manufact\\manufact-dbt\\qntproj\\logs'}
+[0m04:21:05.665112 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e2f0bde0-eb7c-49d1-89f2-2a790b0d8daa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB0ED37A50>]}
+[0m04:21:05.850112 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e2f0bde0-eb7c-49d1-89f2-2a790b0d8daa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB031CCE90>]}
+[0m04:21:05.853117 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m04:21:07.164125 [debug] [MainThread]: checksum: d860646ec4cb4da1117743516a819ec583c41076b3390034a3c79bc1e260c204, vars: {}, profile: qntproj, target: dev, version: 1.12.3
+[0m04:21:07.557126 [debug] [MainThread]: Partial parsing enabled: 3 files deleted, 0 files added, 0 files changed.
+[0m04:21:07.560126 [debug] [MainThread]: Partial parsing: deleted file: qntproj://models\example\my_first_dbt_model.sql
+[0m04:21:07.561126 [debug] [MainThread]: Partial parsing: deleted file: qntproj://models\example\my_second_dbt_model.sql
+[0m04:21:07.793127 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.qntproj.example
+[0m04:21:07.804127 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e2f0bde0-eb7c-49d1-89f2-2a790b0d8daa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB056ECF10>]}
+[0m04:21:08.244127 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\manifest.json
+[0m04:21:08.253702 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\semantic_manifest.json
+[0m04:21:08.352576 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\osi_document.json
+[0m04:21:08.568533 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e2f0bde0-eb7c-49d1-89f2-2a790b0d8daa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB0ECAEC10>]}
+[0m04:21:08.570450 [info ] [MainThread]: Found 1 model, 561 macros
+[0m04:21:08.572519 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e2f0bde0-eb7c-49d1-89f2-2a790b0d8daa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB05506A50>]}
+[0m04:21:08.577616 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m04:21:08.587650 [debug] [MainThread]: Command end result
+[0m04:21:08.895430 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\manifest.json
+[0m04:21:08.915430 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\semantic_manifest.json
+[0m04:21:08.930431 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\osi_document.json
+[0m04:21:08.950429 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\run_results.json
+[0m04:21:08.954435 [debug] [MainThread]: Command `dbt test` succeeded at 04:21:08.953430 after 6.41 seconds
+[0m04:21:08.956432 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB7D39EBD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB054E3250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB0559B050>]}
+[0m04:21:08.958430 [debug] [MainThread]: Flushing usage events
+[0m04:21:10.221878 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:22:23.303989 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2D2572750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2D2570950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2D2571ED0>]}
+
+
+============================== 04:22:23.310014 | 477c2f59-7011-45cf-a3a6-ab192a104f80 ==============================
+[0m04:22:23.310014 [info ] [MainThread]: Running with dbt=1.12.3
+[0m04:22:23.311994 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Bamidele\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt test --select stg_customers', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\Bamidele\\Documents\\manufact\\manufact-dbt\\qntproj\\logs'}
+[0m04:22:25.898823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '477c2f59-7011-45cf-a3a6-ab192a104f80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2D0B020D0>]}
+[0m04:22:26.092822 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '477c2f59-7011-45cf-a3a6-ab192a104f80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2CD7C5550>]}
+[0m04:22:26.095823 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m04:22:27.438423 [debug] [MainThread]: checksum: d860646ec4cb4da1117743516a819ec583c41076b3390034a3c79bc1e260c204, vars: {}, profile: qntproj, target: dev, version: 1.12.3
+[0m04:22:27.899037 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m04:22:27.900038 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m04:22:27.901040 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m04:22:27.911037 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.qntproj.stg_customers
+[0m04:22:27.920041 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '477c2f59-7011-45cf-a3a6-ab192a104f80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2DBB19F90>]}
+[0m04:22:28.301551 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\manifest.json
+[0m04:22:28.311967 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\semantic_manifest.json
+[0m04:22:28.370391 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\osi_document.json
+[0m04:22:28.411392 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '477c2f59-7011-45cf-a3a6-ab192a104f80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2DC0B0410>]}
+[0m04:22:28.413562 [info ] [MainThread]: Found 1 model, 561 macros
+[0m04:22:28.415859 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '477c2f59-7011-45cf-a3a6-ab192a104f80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2DC0A3A90>]}
+[0m04:22:28.419624 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m04:22:28.425318 [debug] [MainThread]: Command end result
+[0m04:22:28.538283 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\manifest.json
+[0m04:22:28.545279 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\semantic_manifest.json
+[0m04:22:28.554279 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\osi_document.json
+[0m04:22:28.562283 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\run_results.json
+[0m04:22:28.565283 [debug] [MainThread]: Command `dbt test` succeeded at 04:22:28.565283 after 5.43 seconds
+[0m04:22:28.567282 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2CA33EBD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2D24EB150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2D24FA610>]}
+[0m04:22:28.568280 [debug] [MainThread]: Flushing usage events
+[0m04:22:29.705289 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:25:37.286283 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013BD03E1F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013BD03E0090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013BD03E1710>]}
+
+
+============================== 04:25:37.293280 | b1c65110-409c-47b7-841d-9e99a0ab44ff ==============================
+[0m04:25:37.293280 [info ] [MainThread]: Running with dbt=1.12.3
+[0m04:25:37.296285 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Bamidele\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt test --select stg_customers', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\Bamidele\\Documents\\manufact\\manufact-dbt\\qntproj\\logs'}
+[0m04:25:39.880769 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b1c65110-409c-47b7-841d-9e99a0ab44ff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013BCDFC5BD0>]}
+[0m04:25:39.989746 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b1c65110-409c-47b7-841d-9e99a0ab44ff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013BCB634950>]}
+[0m04:25:39.991750 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m04:25:40.990522 [debug] [MainThread]: checksum: d860646ec4cb4da1117743516a819ec583c41076b3390034a3c79bc1e260c204, vars: {}, profile: qntproj, target: dev, version: 1.12.3
+[0m04:25:41.453515 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m04:25:41.454517 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m04:25:41.455517 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m04:25:41.464517 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.qntproj.stg_customers
+[0m04:25:41.472513 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b1c65110-409c-47b7-841d-9e99a0ab44ff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013BD9FA3350>]}
+[0m04:25:41.910520 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\manifest.json
+[0m04:25:41.917521 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\semantic_manifest.json
+[0m04:25:41.975026 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\osi_document.json
+[0m04:25:42.016030 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b1c65110-409c-47b7-841d-9e99a0ab44ff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013BD9F20C10>]}
+[0m04:25:42.020030 [info ] [MainThread]: Found 2 models, 561 macros
+[0m04:25:42.021028 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b1c65110-409c-47b7-841d-9e99a0ab44ff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013BD9A5DD10>]}
+[0m04:25:42.024022 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m04:25:42.033026 [debug] [MainThread]: Command end result
+[0m04:25:42.118029 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\manifest.json
+[0m04:25:42.125026 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\semantic_manifest.json
+[0m04:25:42.132027 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\osi_document.json
+[0m04:25:42.139025 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\run_results.json
+[0m04:25:42.142052 [debug] [MainThread]: Command `dbt test` succeeded at 04:25:42.142052 after 5.16 seconds
+[0m04:25:42.144051 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013BC822EBD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013BD03E1190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013BD035B110>]}
+[0m04:25:42.145028 [debug] [MainThread]: Flushing usage events
+[0m04:25:43.309215 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:27:15.847226 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019C64332150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019C643304D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019C64331650>]}
+
+
+============================== 04:27:15.852246 | 385540ca-5fd4-43ab-a5ab-36c9fbf5439e ==============================
+[0m04:27:15.852246 [info ] [MainThread]: Running with dbt=1.12.3
+[0m04:27:15.854224 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Bamidele\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt test --select stg_customers', 'log_path': 'C:\\Users\\Bamidele\\Documents\\manufact\\manufact-dbt\\qntproj\\logs'}
+[0m04:27:17.755686 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '385540ca-5fd4-43ab-a5ab-36c9fbf5439e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019C643FF2D0>]}
+[0m04:27:17.867687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '385540ca-5fd4-43ab-a5ab-36c9fbf5439e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019C5F585AD0>]}
+[0m04:27:17.868663 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m04:27:19.149373 [debug] [MainThread]: checksum: d860646ec4cb4da1117743516a819ec583c41076b3390034a3c79bc1e260c204, vars: {}, profile: qntproj, target: dev, version: 1.12.3
+[0m04:27:19.675850 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m04:27:19.681846 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m04:27:19.693846 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m04:27:19.728847 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '385540ca-5fd4-43ab-a5ab-36c9fbf5439e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019C6DF20710>]}
+[0m04:27:20.125848 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\manifest.json
+[0m04:27:20.137847 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\semantic_manifest.json
+[0m04:27:20.219848 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\osi_document.json
+[0m04:27:20.275848 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '385540ca-5fd4-43ab-a5ab-36c9fbf5439e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019C6DE61750>]}
+[0m04:27:20.279849 [info ] [MainThread]: Found 2 models, 561 macros
+[0m04:27:20.281849 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '385540ca-5fd4-43ab-a5ab-36c9fbf5439e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019C6DD66CD0>]}
+[0m04:27:20.285849 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m04:27:20.292848 [debug] [MainThread]: Command end result
+[0m04:27:20.429657 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\manifest.json
+[0m04:27:20.438362 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\semantic_manifest.json
+[0m04:27:20.448808 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\osi_document.json
+[0m04:27:20.461447 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\run_results.json
+[0m04:27:20.465463 [debug] [MainThread]: Command `dbt test` succeeded at 04:27:20.464462 after 4.78 seconds
+[0m04:27:20.466463 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019C64327ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019C5C0BEBD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019C642AAE50>]}
+[0m04:27:20.469113 [debug] [MainThread]: Flushing usage events
+[0m04:27:21.744808 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:30:25.670512 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE29DC2050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE29DC2590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE29DC3B10>]}
+
+
+============================== 04:30:25.676509 | 37b4d73d-bf45-463b-9774-e62a83cf6221 ==============================
+[0m04:30:25.676509 [info ] [MainThread]: Running with dbt=1.12.3
+[0m04:30:25.678513 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Bamidele\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt ls --resource-type model', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\Bamidele\\Documents\\manufact\\manufact-dbt\\qntproj\\logs'}
+[0m04:30:27.872674 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '37b4d73d-bf45-463b-9774-e62a83cf6221', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE3335AD90>]}
+[0m04:30:28.028677 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '37b4d73d-bf45-463b-9774-e62a83cf6221', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE279C9050>]}
+[0m04:30:28.030676 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m04:30:28.899679 [debug] [MainThread]: checksum: d860646ec4cb4da1117743516a819ec583c41076b3390034a3c79bc1e260c204, vars: {}, profile: qntproj, target: dev, version: 1.12.3
+[0m04:30:29.254665 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m04:30:29.255665 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m04:30:29.256668 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m04:30:29.278667 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '37b4d73d-bf45-463b-9774-e62a83cf6221', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE339A9210>]}
+[0m04:30:29.660671 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\manifest.json
+[0m04:30:29.667669 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\semantic_manifest.json
+[0m04:30:29.718670 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\osi_document.json
+[0m04:30:29.756144 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '37b4d73d-bf45-463b-9774-e62a83cf6221', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE33877FD0>]}
+[0m04:30:29.758141 [info ] [MainThread]: Found 2 models, 561 macros
+[0m04:30:29.760142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '37b4d73d-bf45-463b-9774-e62a83cf6221', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE33803C90>]}
+[0m04:30:29.762142 [info ] [MainThread]: qntproj.staging.stg_customers
+[0m04:30:29.763139 [info ] [MainThread]: qntproj.staging.stg_production
+[0m04:30:29.765139 [debug] [MainThread]: Command `dbt ls` succeeded at 04:30:29.765139 after 4.27 seconds
+[0m04:30:29.766140 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE21CAEBD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE29E32890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE29CE5CD0>]}
+[0m04:30:29.767139 [debug] [MainThread]: Flushing usage events
+[0m04:30:31.111826 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:31:30.073846 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000290FDA23B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000290FDA21C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000290FDA20D10>]}
+
+
+============================== 04:31:30.079869 | 71091618-7b9d-46e8-983a-e9ef579627b3 ==============================
+[0m04:31:30.079869 [info ] [MainThread]: Running with dbt=1.12.3
+[0m04:31:30.080859 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Bamidele\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt test --select stg_customers', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\Bamidele\\Documents\\manufact\\manufact-dbt\\qntproj\\logs'}
+[0m04:31:32.199185 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '71091618-7b9d-46e8-983a-e9ef579627b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000290FDA67150>]}
+[0m04:31:32.307188 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '71091618-7b9d-46e8-983a-e9ef579627b3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000290FB5C8F50>]}
+[0m04:31:32.310193 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m04:31:33.309127 [debug] [MainThread]: checksum: d860646ec4cb4da1117743516a819ec583c41076b3390034a3c79bc1e260c204, vars: {}, profile: qntproj, target: dev, version: 1.12.3
+[0m04:31:33.694649 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m04:31:33.696652 [debug] [MainThread]: Partial parsing: updated file: qntproj://models\staging\stg_customers.sql
+[0m04:31:34.364897 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Compilation Error
+  Model 'model.qntproj.stg_customers' (models\staging\stg_customers.sql) depends on a source named 'raw.customers' which was not found
+[0m04:31:34.367899 [debug] [MainThread]: Command `dbt test` failed at 04:31:34.367899 after 4.45 seconds
+[0m04:31:34.368899 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000290FDA996D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000290FDA9A990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000290FD9AB6D0>]}
+[0m04:31:34.370898 [debug] [MainThread]: Flushing usage events
+[0m04:31:35.507234 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:34:56.778283 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF55203E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF550E6A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF55200C50>]}
+
+
+============================== 04:34:56.784284 | 62979f98-d331-4a8f-8f23-9a78e9b84ca7 ==============================
+[0m04:34:56.784284 [info ] [MainThread]: Running with dbt=1.12.3
+[0m04:34:56.785280 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Bamidele\\.dbt', 'invocation_command': 'dbt test --select stg_customers', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\Bamidele\\Documents\\manufact\\manufact-dbt\\qntproj\\logs'}
+[0m04:34:59.935999 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '62979f98-d331-4a8f-8f23-9a78e9b84ca7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF5E7E5290>]}
+[0m04:35:00.129496 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '62979f98-d331-4a8f-8f23-9a78e9b84ca7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF52DC1050>]}
+[0m04:35:00.133500 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m04:35:01.570174 [debug] [MainThread]: checksum: d860646ec4cb4da1117743516a819ec583c41076b3390034a3c79bc1e260c204, vars: {}, profile: qntproj, target: dev, version: 1.12.3
+[0m04:35:01.818835 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m04:35:01.820836 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '62979f98-d331-4a8f-8f23-9a78e9b84ca7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF52DEF990>]}
+[0m04:35:04.250773 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Compilation Error in model stg_customers (models\staging\stg_customers.sql)
+  source() takes exactly two arguments (1 given)
+[0m04:35:04.252771 [debug] [MainThread]: Command `dbt test` failed at 04:35:04.252771 after 7.64 seconds
+[0m04:35:04.254772 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF4CF9EBD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF5EC01650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF55202C90>]}
+[0m04:35:04.255770 [debug] [MainThread]: Flushing usage events
+[0m04:35:05.487537 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:35:30.801035 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028BCC2218D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028BCC221C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028BCC221290>]}
+
+
+============================== 04:35:30.807032 | 41b04819-2d1e-4039-80f0-3b585903af77 ==============================
+[0m04:35:30.807032 [info ] [MainThread]: Running with dbt=1.12.3
+[0m04:35:30.809035 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Bamidele\\.dbt', 'invocation_command': 'dbt test --select stg_customers', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\Bamidele\\Documents\\manufact\\manufact-dbt\\qntproj\\logs'}
+[0m04:35:33.472063 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '41b04819-2d1e-4039-80f0-3b585903af77', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028BCC246C10>]}
+[0m04:35:33.613066 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '41b04819-2d1e-4039-80f0-3b585903af77', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028BC9DC8FD0>]}
+[0m04:35:33.616068 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m04:35:34.503883 [debug] [MainThread]: checksum: d860646ec4cb4da1117743516a819ec583c41076b3390034a3c79bc1e260c204, vars: {}, profile: qntproj, target: dev, version: 1.12.3
+[0m04:35:34.672885 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m04:35:34.673887 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '41b04819-2d1e-4039-80f0-3b585903af77', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028BCA796810>]}
+[0m04:35:39.096055 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'customers' in the 'models' section of file 'models\staging\schema.yml'
+[0m04:35:39.424735 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Compilation Error
+  Model 'model.qntproj.stg_customers' (models\staging\stg_customers.sql) depends on a source named 'source.customers' which was not found
+[0m04:35:39.427739 [debug] [MainThread]: Command `dbt test` failed at 04:35:39.427739 after 8.78 seconds
+[0m04:35:39.429738 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028BCC217C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028BCC215B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028BD5FC4A10>]}
+[0m04:35:39.430736 [debug] [MainThread]: Flushing usage events
+[0m04:35:40.532497 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:04:47.255476 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F909408850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9094164D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F909414AD0>]}
+
+
+============================== 18:04:47.269476 | 36194806-6c64-4137-bf6c-64ba1b58a760 ==============================
+[0m18:04:47.269476 [info ] [MainThread]: Running with dbt=1.12.3
+[0m18:04:47.272477 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Bamidele\\.dbt', 'invocation_command': 'dbt ', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'c:\\Users\\Bamidele\\Documents\\manufact\\manufact-dbt\\qntproj\\logs'}
+[0m18:04:48.296675 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '36194806-6c64-4137-bf6c-64ba1b58a760', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9079D4A10>]}
+[0m18:04:48.395697 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m18:04:48.401960 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m18:04:48.406022 [debug] [MainThread]: Command `cli deps` succeeded at 18:04:48.405487 after 1.67 seconds
+[0m18:04:48.408134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F909400910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F909408110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F90932AE90>]}
+[0m18:04:48.411431 [debug] [MainThread]: Flushing usage events
+[0m18:04:49.419334 [debug] [MainThread]: An error was encountered while trying to flush usage events
