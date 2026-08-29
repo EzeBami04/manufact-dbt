@@ -1,6 +1,6 @@
 with maintenance as (
     select *
-    from {{ source('raw', 'maintenance') }}
+    from {{ source('staging', 'maintenance') }}
 )
 
 select *

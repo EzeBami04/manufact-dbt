@@ -1,0 +1,15 @@
+qntproj:
+  target: bigquery_dev
+
+  outputs:
+    bigquery_dev:
+      type: bigquery
+      method: service-account
+      project: "{{ env_var('PROJECT_ID') }}"
+      dataset: qnt_staging
+      threads: 2
+      timeout_seconds: 300
+      priority: interactive
+      retries: 1
+      keyfile: "{{ env_var('SA_KEY') }}"
+      location: "{{ env_var('REGION') }}"

@@ -1,6 +1,6 @@
 with products as (
     select *
-    from {{ source('raw', 'products') }}
+    from {{ source('staging', 'products') }}
 )
 
 select *

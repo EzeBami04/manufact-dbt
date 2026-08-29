@@ -1,6 +1,6 @@
 with material_usage as (
     select *
-    from {{ source('raw', 'material_usage') }}
+    from {{ source('staging', 'material_usage') }}
 )
 
 select *

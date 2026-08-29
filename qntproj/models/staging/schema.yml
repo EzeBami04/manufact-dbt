@@ -1,9 +1,26 @@
 version: 2
+
+sources:
+  - name: staging
+    database: "{{ env_var('PROJECT_ID') }}"
+    schema: qnt_staging
+    tables:
+      - name: customers
+      - name: employees
+      - name: inventory
+      - name: orders
+      - name: order_items
+      - name: production
+      - name: products
+      - name: quality_checks
+      - name: material_usage
+      - name: maintenance
+
 models:
- - name: customers
-   description: "Customers table"
-   columns:
-    - name: 'customer_id'
-      tests:
-        - not_null
-        - unique
+  - name: stg_customers
+    description: "Customers table"
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - unique

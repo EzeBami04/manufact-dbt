@@ -1,7 +1,6 @@
 name: 'qntproj'
 version: '1.0.0'
 
-# This setting configures which "profile" dbt uses for this project.
 profile: 'qntproj'
 
 

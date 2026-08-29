@@ -1,6 +1,6 @@
 with quality_check as (
     select *
-    from {{ source('raw', 'quality_checks') }}
+    from {{ source('staging', 'quality_checks') }}
 )
 
 select *

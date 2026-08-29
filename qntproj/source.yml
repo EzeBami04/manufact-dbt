@@ -2,7 +2,7 @@ version2:
 
 sources:
   - name: staging
-    database: "${{ secrets.PROJECT_ID}}"
+    database: "{{ env_var('PROJECT_ID') }}"
     schema: qnt_staging
 
     tables:

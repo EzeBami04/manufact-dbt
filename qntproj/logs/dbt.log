@@ -410,3 +410,83 @@ Compilation Error
 [0m11:35:15.837934 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020835640B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020835642510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002083F207650>]}
 [0m11:35:15.884535 [debug] [MainThread]: Flushing usage events
 [0m11:35:17.385954 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:47:17.647149 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D77861DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D777A6690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D77947E50>]}
+
+
+============================== 11:47:17.660148 | 7fb96bec-668a-4666-aa25-5dfe6660e694 ==============================
+[0m11:47:17.660148 [info ] [MainThread]: Running with dbt=1.12.3
+[0m11:47:17.676315 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Bamidele\\Documents\\manufact\\manufact-dbt\\qntproj', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt test --select stg_customers', 'log_path': 'C:\\Users\\Bamidele\\Documents\\manufact\\manufact-dbt\\qntproj\\logs'}
+[0m11:47:30.569934 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7fb96bec-668a-4666-aa25-5dfe6660e694', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D00EAC050>]}
+[0m11:47:31.141297 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7fb96bec-668a-4666-aa25-5dfe6660e694', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D72B25610>]}
+[0m11:47:31.146296 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m11:47:36.672668 [debug] [MainThread]: checksum: ace6cc19d752b2eede857364603196a4b3b33bbc94fcfd5ac723aa93c3192327, vars: {}, profile: qntproj, target: bigquery_dev, version: 1.12.3
+[0m11:47:39.177578 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m11:47:39.384515 [debug] [MainThread]: previous checksum: ace6cc19d752b2eede857364603196a4b3b33bbc94fcfd5ac723aa93c3192327, current checksum: d860646ec4cb4da1117743516a819ec583c41076b3390034a3c79bc1e260c204
+[0m11:47:39.386515 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m11:47:39.406514 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m11:47:39.414513 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '7fb96bec-668a-4666-aa25-5dfe6660e694', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D75E3A690>]}
+[0m11:47:51.867967 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'customers' in the 'models' section of file 'models\staging\schema.yml'
+[0m11:47:52.963217 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Compilation Error
+  Model 'model.qntproj.stg_customers' (models\staging\stg_customers.sql) depends on a source named 'staging.customers' which was not found
+[0m11:47:52.983743 [debug] [MainThread]: Command `dbt test` failed at 11:47:52.983743 after 36.35 seconds
+[0m11:47:53.001744 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D77862F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D02668090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D77862CD0>]}
+[0m11:47:53.003742 [debug] [MainThread]: Flushing usage events
+[0m11:47:54.429950 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:53:00.539485 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025528E2F110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002552A6E7750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002552A6E7650>]}
+
+
+============================== 11:53:00.552011 | 7067e55d-9f33-4e88-b279-1803b32b5c45 ==============================
+[0m11:53:00.552011 [info ] [MainThread]: Running with dbt=1.12.3
+[0m11:53:00.556012 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Bamidele\\Documents\\manufact\\manufact-dbt\\qntproj', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt test --select stg_customers', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\Bamidele\\Documents\\manufact\\manufact-dbt\\qntproj\\logs'}
+[0m11:53:08.467849 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7067e55d-9f33-4e88-b279-1803b32b5c45', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025533C1C050>]}
+[0m11:53:08.994950 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7067e55d-9f33-4e88-b279-1803b32b5c45', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000255258C59D0>]}
+[0m11:53:09.016945 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m11:53:12.032539 [debug] [MainThread]: checksum: ace6cc19d752b2eede857364603196a4b3b33bbc94fcfd5ac723aa93c3192327, vars: {}, profile: qntproj, target: bigquery_dev, version: 1.12.3
+[0m11:53:12.677612 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m11:53:12.688574 [debug] [MainThread]: previous checksum: ace6cc19d752b2eede857364603196a4b3b33bbc94fcfd5ac723aa93c3192327, current checksum: d860646ec4cb4da1117743516a819ec583c41076b3390034a3c79bc1e260c204
+[0m11:53:12.690564 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m11:53:12.696568 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m11:53:12.702611 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '7067e55d-9f33-4e88-b279-1803b32b5c45', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025528BE2690>]}
+[0m11:53:23.805294 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Compilation Error
+  Model 'model.qntproj.stg_customers' (models\staging\stg_customers.sql) depends on a source named 'staging.customers' which was not found
+[0m11:53:23.828958 [debug] [MainThread]: Command `dbt test` failed at 11:53:23.826957 after 23.89 seconds
+[0m11:53:23.830957 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002552A6038D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002552A602350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000255355C9A50>]}
+[0m11:53:23.832956 [debug] [MainThread]: Flushing usage events
+[0m11:53:25.211344 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:06:47.086048 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F92FA222D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9329A7310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9329A7850>]}
+
+
+============================== 12:06:47.108045 | c78fb7cc-0d1c-4d0b-8bf0-8f9f468408e9 ==============================
+[0m12:06:47.108045 [info ] [MainThread]: Running with dbt=1.12.3
+[0m12:06:47.123393 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Bamidele\\Documents\\manufact\\manufact-dbt\\qntproj', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt test --select stg_customers', 'log_path': 'C:\\Users\\Bamidele\\Documents\\manufact\\manufact-dbt\\qntproj\\logs'}
+[0m12:06:47.163389 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'REGION'
+[0m12:06:47.180390 [debug] [MainThread]: Command `dbt test` failed at 12:06:47.180390 after 0.86 seconds
+[0m12:06:47.183394 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9329AA9D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9329AA690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9328C18D0>]}
+[0m12:06:47.185393 [debug] [MainThread]: Flushing usage events
+[0m12:06:49.356903 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:07:28.581931 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1945C2BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A194505D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A19465A390>]}
+
+
+============================== 12:07:28.594932 | 9b5d9133-5906-453c-84c8-108179424e1e ==============================
+[0m12:07:28.594932 [info ] [MainThread]: Running with dbt=1.12.3
+[0m12:07:28.600932 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Bamidele\\Documents\\manufact\\manufact-dbt\\qntproj', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt test --select stg_customers', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\Bamidele\\Documents\\manufact\\manufact-dbt\\qntproj\\logs'}
+[0m12:07:34.235735 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9b5d9133-5906-453c-84c8-108179424e1e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A19DCAA090>]}
+[0m12:07:34.685369 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9b5d9133-5906-453c-84c8-108179424e1e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A18F8856D0>]}
+[0m12:07:34.689346 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m12:07:37.771603 [debug] [MainThread]: checksum: ace6cc19d752b2eede857364603196a4b3b33bbc94fcfd5ac723aa93c3192327, vars: {}, profile: qntproj, target: bigquery_dev, version: 1.12.3
+[0m12:07:38.341205 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m12:07:38.343204 [debug] [MainThread]: previous checksum: ace6cc19d752b2eede857364603196a4b3b33bbc94fcfd5ac723aa93c3192327, current checksum: d860646ec4cb4da1117743516a819ec583c41076b3390034a3c79bc1e260c204
+[0m12:07:38.345204 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m12:07:38.347205 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m12:07:38.349205 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '9b5d9133-5906-453c-84c8-108179424e1e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1921669D0>]}
+[0m12:07:49.194143 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Compilation Error
+  Model 'model.qntproj.stg_maintenance' (models\staging\stg_maintenance.sql) depends on a source named 'raw.maintenance' which was not found
+[0m12:07:49.198142 [debug] [MainThread]: Command `dbt test` failed at 12:07:49.198142 after 20.99 seconds
+[0m12:07:49.203741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A18C3DE890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1944F2DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A19F56F9D0>]}
+[0m12:07:49.205734 [debug] [MainThread]: Flushing usage events
+[0m12:07:50.884866 [debug] [MainThread]: An error was encountered while trying to flush usage events

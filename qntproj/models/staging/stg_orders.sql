@@ -1,6 +1,6 @@
 with orders as (
     select *
-    from {{ source('raw', 'orders') }}
+    from {{ source('staging', 'orders') }}
 )
 
 select *
