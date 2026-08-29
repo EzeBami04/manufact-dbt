@@ -1,0 +1,18 @@
+version2:
+
+sources:
+  - name: staging
+    database: "${{ secrets.PROJECT_ID}}"
+    schema: qnt_staging
+
+    tables:
+      - name: customers
+      - name: employees
+      - name: inventory
+      - name: orders
+      - name: order_items
+      - name: production
+      - name: products
+      - name: quality_checks
+      - name: material_usage
+      - name: maintenance

@@ -1,6 +1,6 @@
 with inventory as (
     select *
-    from {{ source('raw', 'inventory') }}
+    from {{ source('staging', 'inventory') }}
 )
 
 select *

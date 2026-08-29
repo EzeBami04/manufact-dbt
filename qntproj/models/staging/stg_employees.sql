@@ -1,6 +1,6 @@
 with employees as (
     select *
-    from {{ source('raw', 'employees') }}
+    from {{ source('staging', 'employees') }}
 )
 
 select *

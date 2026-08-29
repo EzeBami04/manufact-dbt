@@ -1,6 +1,6 @@
 with customers as (
     select *
-    from {{ source('raw', 'customers') }}
+    from {{ source( 'staging','customers') }}
 )
 
 select *
