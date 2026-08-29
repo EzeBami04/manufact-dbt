@@ -1,3 +1,5 @@
 .env
 mdbt/
 logs
+qntproj/logs/
+qntproj/.user.yml
