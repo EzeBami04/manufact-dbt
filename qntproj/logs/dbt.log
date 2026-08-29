@@ -490,3 +490,457 @@ Compilation Error
 [0m12:07:49.203741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A18C3DE890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1944F2DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A19F56F9D0>]}
 [0m12:07:49.205734 [debug] [MainThread]: Flushing usage events
 [0m12:07:50.884866 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:34:40.027142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023530350E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023530351DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023530353950>]}
+
+
+============================== 12:34:40.043141 | ea8a9f15-f04c-486b-b48f-0999b191e8c8 ==============================
+[0m12:34:40.043141 [info ] [MainThread]: Running with dbt=1.12.3
+[0m12:34:40.047141 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Bamidele\\Documents\\manufact\\manufact-dbt\\qntproj', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt test --select stg_customers', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\Bamidele\\Documents\\manufact\\manufact-dbt\\qntproj\\logs'}
+[0m12:34:51.117936 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ea8a9f15-f04c-486b-b48f-0999b191e8c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023539A4D0D0>]}
+[0m12:34:51.561266 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ea8a9f15-f04c-486b-b48f-0999b191e8c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002352B605690>]}
+[0m12:34:51.565264 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m12:34:55.111753 [debug] [MainThread]: checksum: ace6cc19d752b2eede857364603196a4b3b33bbc94fcfd5ac723aa93c3192327, vars: {}, profile: qntproj, target: bigquery_dev, version: 1.12.3
+[0m12:34:56.092207 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m12:34:56.120507 [debug] [MainThread]: previous checksum: ace6cc19d752b2eede857364603196a4b3b33bbc94fcfd5ac723aa93c3192327, current checksum: d860646ec4cb4da1117743516a819ec583c41076b3390034a3c79bc1e260c204
+[0m12:34:56.125510 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m12:34:56.153513 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m12:34:56.187483 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'ea8a9f15-f04c-486b-b48f-0999b191e8c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002352DEE6AD0>]}
+[0m12:35:12.398129 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.qntproj.mart
+[0m12:35:12.424132 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ea8a9f15-f04c-486b-b48f-0999b191e8c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002353B0CE310>]}
+[0m12:35:13.674884 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\manifest.json
+[0m12:35:13.787417 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\semantic_manifest.json
+[0m12:35:13.970177 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\osi_document.json
+[0m12:35:14.132194 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ea8a9f15-f04c-486b-b48f-0999b191e8c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002353B65A450>]}
+[0m12:35:14.135192 [info ] [MainThread]: Found 11 models, 2 data tests, 10 sources, 561 macros
+[0m12:35:14.141192 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ea8a9f15-f04c-486b-b48f-0999b191e8c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235303B6650>]}
+[0m12:35:14.149201 [info ] [MainThread]: 
+[0m12:35:14.188197 [info ] [MainThread]: Concurrency: 2 threads (target='bigquery_dev')
+[0m12:35:14.247031 [info ] [MainThread]: 
+[0m12:35:14.313059 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m12:35:14.380105 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_seismic-gecko-487920-t3_qnt_staging'
+[0m12:35:14.382104 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:35:16.946985 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ea8a9f15-f04c-486b-b48f-0999b191e8c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023539A3D850>]}
+[0m12:35:16.949510 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:35:17.445038 [debug] [Thread-2 (]: Began running node test.qntproj.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m12:35:17.449170 [debug] [Thread-3 (]: Began running node test.qntproj.unique_stg_customers_customer_id.c7614daada
+[0m12:35:17.448098 [info ] [Thread-2 (]: 1 of 2 START test not_null_stg_customers_customer_id ........................... [RUN]
+[0m12:35:17.470258 [debug] [Thread-2 (]: Acquiring new bigquery connection 'test.qntproj.not_null_stg_customers_customer_id.e2cfb1f9aa'
+[0m12:35:17.474262 [debug] [Thread-2 (]: Began compiling node test.qntproj.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m12:35:17.452153 [info ] [Thread-3 (]: 2 of 2 START test unique_stg_customers_customer_id ............................. [RUN]
+[0m12:35:17.584891 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.qntproj.unique_stg_customers_customer_id.c7614daada'
+[0m12:35:17.724650 [debug] [Thread-3 (]: Began compiling node test.qntproj.unique_stg_customers_customer_id.c7614daada
+[0m12:35:17.754035 [debug] [Thread-2 (]: Writing injected SQL for node "test.qntproj.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m12:35:17.824107 [debug] [Thread-3 (]: Writing injected SQL for node "test.qntproj.unique_stg_customers_customer_id.c7614daada"
+[0m12:35:17.852279 [debug] [Thread-2 (]: Began executing node test.qntproj.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m12:35:17.854277 [debug] [Thread-3 (]: Began executing node test.qntproj.unique_stg_customers_customer_id.c7614daada
+[0m12:35:18.557364 [debug] [Thread-3 (]: Writing runtime sql for node "test.qntproj.unique_stg_customers_customer_id.c7614daada"
+[0m12:35:18.570371 [debug] [Thread-2 (]: Writing runtime sql for node "test.qntproj.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m12:35:18.580363 [debug] [Thread-3 (]: On test.qntproj.unique_stg_customers_customer_id.c7614daada: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "qntproj", "target_name": "bigquery_dev", "node_id": "test.qntproj.unique_stg_customers_customer_id.c7614daada"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select customer_id as unique_field
+  from `seismic-gecko-487920-t3`.`qnt_staging`.`stg_customers`
+  where customer_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:35:18.583359 [debug] [Thread-2 (]: On test.qntproj.not_null_stg_customers_customer_id.e2cfb1f9aa: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "qntproj", "target_name": "bigquery_dev", "node_id": "test.qntproj.not_null_stg_customers_customer_id.e2cfb1f9aa"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from `seismic-gecko-487920-t3`.`qnt_staging`.`stg_customers`
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:35:18.588361 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m12:35:18.585357 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m12:35:20.474650 [error] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=seismic-gecko-487920-t3&j=bq:europewest9:3ba4e59f-9668-45af-9a89-3e90a0a0cec9&page=queryresults
+[0m12:35:20.479652 [error] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=seismic-gecko-487920-t3&j=bq:europewest9:a4eb78dc-9842-427e-92ee-ed8942ea6b70&page=queryresults
+[0m12:35:21.870888 [debug] [Thread-3 (]: Database Error in test unique_stg_customers_customer_id (models\staging\schema.yml)
+  Location europewest9 does not support this operation.
+  compiled code at target\run\qntproj\models\staging\schema.yml\unique_stg_customers_customer_id.sql
+[0m12:35:21.881892 [debug] [Thread-2 (]: Database Error in test not_null_stg_customers_customer_id (models\staging\schema.yml)
+  Location europewest9 does not support this operation.
+  compiled code at target\run\qntproj\models\staging\schema.yml\not_null_stg_customers_customer_id.sql
+[0m12:35:21.883892 [error] [Thread-3 (]: 2 of 2 ERROR unique_stg_customers_customer_id .................................. [[31mERROR[0m in 4.30s]
+[0m12:35:21.894892 [debug] [Thread-3 (]: Finished running node test.qntproj.unique_stg_customers_customer_id.c7614daada
+[0m12:35:21.886892 [error] [Thread-2 (]: 1 of 2 ERROR not_null_stg_customers_customer_id ................................ [[31mERROR[0m in 4.42s]
+[0m12:35:21.899893 [debug] [Thread-6 (]: Marking all children of 'test.qntproj.unique_stg_customers_customer_id.c7614daada' to be skipped because of status 'error'.  Reason: Database Error in test unique_stg_customers_customer_id (models\staging\schema.yml)
+  Location europewest9 does not support this operation.
+  compiled code at target\run\qntproj\models\staging\schema.yml\unique_stg_customers_customer_id.sql.
+[0m12:35:21.903896 [debug] [Thread-2 (]: Finished running node test.qntproj.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m12:35:21.909894 [debug] [Thread-6 (]: Marking all children of 'test.qntproj.not_null_stg_customers_customer_id.e2cfb1f9aa' to be skipped because of status 'error'.  Reason: Database Error in test not_null_stg_customers_customer_id (models\staging\schema.yml)
+  Location europewest9 does not support this operation.
+  compiled code at target\run\qntproj\models\staging\schema.yml\not_null_stg_customers_customer_id.sql.
+[0m12:35:21.915896 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m12:35:22.157688 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:35:22.161686 [debug] [MainThread]: Connection 'list_seismic-gecko-487920-t3_qnt_staging' was properly closed.
+[0m12:35:22.165689 [debug] [MainThread]: Connection 'test.qntproj.not_null_stg_customers_customer_id.e2cfb1f9aa' was properly closed.
+[0m12:35:22.167688 [debug] [MainThread]: Connection 'test.qntproj.unique_stg_customers_customer_id.c7614daada' was properly closed.
+[0m12:35:22.173690 [info ] [MainThread]: 
+[0m12:35:22.181689 [info ] [MainThread]: Finished running 2 data tests in 0 hours 0 minutes and 7.86 seconds (7.86s).
+[0m12:35:22.189693 [debug] [MainThread]: Command end result
+[0m12:35:22.695402 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\manifest.json
+[0m12:35:22.771402 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\semantic_manifest.json
+[0m12:35:22.819388 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\osi_document.json
+[0m12:35:22.882053 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\run_results.json
+[0m12:35:22.884035 [info ] [MainThread]: 
+[0m12:35:22.934611 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+[0m12:35:23.106682 [info ] [MainThread]: 
+[0m12:35:23.174948 [error] [MainThread]: [[31mERROR[0m]: in test unique_stg_customers_customer_id (models\staging\schema.yml)
+[0m12:35:23.256627 [error] [MainThread]:   Database Error in test unique_stg_customers_customer_id (models\staging\schema.yml)
+  Location europewest9 does not support this operation.
+  compiled code at target\run\qntproj\models\staging\schema.yml\unique_stg_customers_customer_id.sql
+[0m12:35:23.324433 [info ] [MainThread]: 
+[0m12:35:23.416367 [info ] [MainThread]:   compiled code at target\compiled\qntproj\models\staging\schema.yml\unique_stg_customers_customer_id.sql
+[0m12:35:23.622294 [info ] [MainThread]: 
+[0m12:35:23.719094 [error] [MainThread]: [[31mERROR[0m]: in test not_null_stg_customers_customer_id (models\staging\schema.yml)
+[0m12:35:23.820700 [error] [MainThread]:   Database Error in test not_null_stg_customers_customer_id (models\staging\schema.yml)
+  Location europewest9 does not support this operation.
+  compiled code at target\run\qntproj\models\staging\schema.yml\not_null_stg_customers_customer_id.sql
+[0m12:35:23.864204 [info ] [MainThread]: 
+[0m12:35:23.905589 [info ] [MainThread]:   compiled code at target\compiled\qntproj\models\staging\schema.yml\not_null_stg_customers_customer_id.sql
+[0m12:35:24.021189 [info ] [MainThread]: 
+[0m12:35:24.201596 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=0 NO-OP=0 REUSED=0 TOTAL=2
+[0m12:35:24.262657 [debug] [MainThread]: Command `dbt test` failed at 12:35:24.262657 after 44.82 seconds
+[0m12:35:24.284660 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002353043A1D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023530439FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235303EDF50>]}
+[0m12:35:24.289661 [debug] [MainThread]: Flushing usage events
+[0m12:35:25.557332 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:46:56.628009 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F85C592110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F85C592310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F85C593290>]}
+
+
+============================== 12:46:56.646008 | fc2c31fa-3806-4d41-a7ba-9854f82c1278 ==============================
+[0m12:46:56.646008 [info ] [MainThread]: Running with dbt=1.12.3
+[0m12:46:56.650007 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Bamidele\\Documents\\manufact\\manufact-dbt\\qntproj', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'log_path': 'C:\\Users\\Bamidele\\Documents\\manufact\\manufact-dbt\\qntproj\\logs'}
+[0m12:46:56.846331 [info ] [MainThread]: dbt version: 1.12.3
+[0m12:46:56.854334 [info ] [MainThread]: python version: 3.11.4
+[0m12:46:56.867336 [info ] [MainThread]: python path: C:\Users\Bamidele\Documents\manufact\manufact-dbt\mdbt\Scripts\python.exe
+[0m12:46:56.895332 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m12:47:07.405633 [info ] [MainThread]: Using profiles dir at C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj
+[0m12:47:07.428308 [info ] [MainThread]: Using profiles.yml file at C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\profiles.yml
+[0m12:47:07.468313 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\dbt_project.yml
+[0m12:47:07.493442 [info ] [MainThread]: adapter type: bigquery
+[0m12:47:07.503876 [info ] [MainThread]: adapter version: 1.12.0
+[0m12:47:08.686882 [info ] [MainThread]: Configuration:
+[0m12:47:08.696716 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:47:08.705992 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:47:08.735620 [info ] [MainThread]: Required dependencies:
+[0m12:47:08.747621 [debug] [MainThread]: Executing "git --help"
+[0m12:47:09.269670 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:47:09.273673 [debug] [MainThread]: STDERR: "b''"
+[0m12:47:09.276706 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:47:09.372671 [info ] [MainThread]: Connection:
+[0m12:47:09.407671 [info ] [MainThread]:   method: service-account
+[0m12:47:09.425685 [info ] [MainThread]:   database: seismic-gecko-487920-t3
+[0m12:47:09.464672 [info ] [MainThread]:   execution_project: seismic-gecko-487920-t3
+[0m12:47:09.532667 [info ] [MainThread]:   schema: qnt_staging
+[0m12:47:09.590364 [info ] [MainThread]:   location: europewest9
+[0m12:47:09.665796 [info ] [MainThread]:   priority: interactive
+[0m12:47:09.716798 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m12:47:09.758182 [info ] [MainThread]:   reservation: None
+[0m12:47:09.794180 [info ] [MainThread]:   impersonate_service_account: None
+[0m12:47:09.870966 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m12:47:09.930982 [info ] [MainThread]:   job_retries: 1
+[0m12:47:09.978481 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m12:47:10.019889 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m12:47:10.050891 [info ] [MainThread]:   job_link_info_level_log: False
+[0m12:47:10.069558 [info ] [MainThread]:   timeout_seconds: 300
+[0m12:47:10.134438 [info ] [MainThread]:   client_id: None
+[0m12:47:10.161448 [info ] [MainThread]:   token_uri: None
+[0m12:47:10.177472 [info ] [MainThread]:   compute_region: None
+[0m12:47:10.193467 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m12:47:10.236728 [info ] [MainThread]:   gcs_bucket: None
+[0m12:47:10.302193 [info ] [MainThread]:   dataproc_batch: None
+[0m12:47:10.333579 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m12:47:17.544592 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m12:47:17.548593 [debug] [MainThread]: On debug: select 1 as id
+[0m12:47:17.553669 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:47:20.027505 [error] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=seismic-gecko-487920-t3&j=bq:europewest9:efdfe891-e563-4177-89e8-7c4dc974758b&page=queryresults
+[0m12:47:20.070503 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m12:47:20.178044 [info ] [MainThread]: [31m1 check failed:[0m
+[0m12:47:20.248666 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Location europewest9 does not support this operation.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m12:47:20.300095 [debug] [MainThread]: Command `dbt debug` failed at 12:47:20.300095 after 25.16 seconds
+[0m12:47:20.303096 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:47:20.306098 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F865C0FB90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F85C58B090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F85C589C50>]}
+[0m12:47:20.312122 [debug] [MainThread]: Flushing usage events
+[0m12:47:23.682427 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:50:18.280250 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B9F6ECFE90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B9F6CC0090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B9F6E3AE50>]}
+
+
+============================== 12:50:18.297293 | 1a0a240c-28c3-4fd3-a2ca-26708f7f779b ==============================
+[0m12:50:18.297293 [info ] [MainThread]: Running with dbt=1.12.3
+[0m12:50:18.310450 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Bamidele\\Documents\\manufact\\manufact-dbt\\qntproj', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\Bamidele\\Documents\\manufact\\manufact-dbt\\qntproj\\logs'}
+[0m12:50:19.134287 [info ] [MainThread]: dbt version: 1.12.3
+[0m12:50:19.197189 [info ] [MainThread]: python version: 3.11.4
+[0m12:50:19.312688 [info ] [MainThread]: python path: C:\Users\Bamidele\Documents\manufact\manufact-dbt\mdbt\Scripts\python.exe
+[0m12:50:19.392852 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m12:50:40.241525 [info ] [MainThread]: Using profiles dir at C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj
+[0m12:50:40.244817 [info ] [MainThread]: Using profiles.yml file at C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\profiles.yml
+[0m12:50:40.248044 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\dbt_project.yml
+[0m12:50:40.269914 [info ] [MainThread]: adapter type: bigquery
+[0m12:50:40.276916 [info ] [MainThread]: adapter version: 1.12.0
+[0m12:50:41.577010 [info ] [MainThread]: Configuration:
+[0m12:50:41.593010 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:50:41.613010 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:50:41.628014 [info ] [MainThread]: Required dependencies:
+[0m12:50:41.637265 [debug] [MainThread]: Executing "git --help"
+[0m12:50:42.290283 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:50:42.293286 [debug] [MainThread]: STDERR: "b''"
+[0m12:50:42.296285 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:50:42.299284 [info ] [MainThread]: Connection:
+[0m12:50:42.302283 [info ] [MainThread]:   method: service-account
+[0m12:50:42.306285 [info ] [MainThread]:   database: seismic-gecko-487920-t3
+[0m12:50:42.312281 [info ] [MainThread]:   execution_project: seismic-gecko-487920-t3
+[0m12:50:42.315283 [info ] [MainThread]:   schema: qnt_staging
+[0m12:50:42.318283 [info ] [MainThread]:   location: europe-west9
+[0m12:50:42.324282 [info ] [MainThread]:   priority: interactive
+[0m12:50:42.329286 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m12:50:42.362310 [info ] [MainThread]:   reservation: None
+[0m12:50:42.378284 [info ] [MainThread]:   impersonate_service_account: None
+[0m12:50:42.394284 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m12:50:42.412847 [info ] [MainThread]:   job_retries: 1
+[0m12:50:42.419857 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m12:50:42.425846 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m12:50:42.434847 [info ] [MainThread]:   job_link_info_level_log: False
+[0m12:50:42.438848 [info ] [MainThread]:   timeout_seconds: 300
+[0m12:50:42.449846 [info ] [MainThread]:   client_id: None
+[0m12:50:42.551849 [info ] [MainThread]:   token_uri: None
+[0m12:50:42.603785 [info ] [MainThread]:   compute_region: None
+[0m12:50:42.681345 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m12:50:42.758342 [info ] [MainThread]:   gcs_bucket: None
+[0m12:50:42.791343 [info ] [MainThread]:   dataproc_batch: None
+[0m12:50:42.839345 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m12:50:46.841015 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m12:50:46.844015 [debug] [MainThread]: On debug: select 1 as id
+[0m12:50:46.846013 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:50:52.542089 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=seismic-gecko-487920-t3&j=bq:europe-west9:4f30b0a3-b1d4-40b4-8305-f4d0864f8d96&page=queryresults
+[0m12:50:52.969448 [debug] [MainThread]: SQL status: OK in 0.425 seconds
+[0m12:51:13.873249 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m12:51:13.875248 [info ] [MainThread]: [32mAll checks passed![0m
+[0m12:51:13.881252 [debug] [MainThread]: Command `dbt debug` succeeded at 12:51:13.880250 after 57.69 seconds
+[0m12:51:13.886251 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:51:13.889249 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B9F4A6CD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B9F6E2AC90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B9F6E3B3D0>]}
+[0m12:51:13.891248 [debug] [MainThread]: Flushing usage events
+[0m12:51:17.089053 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:03:55.729432 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002938C942B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002938C896610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002938C93A450>]}
+
+
+============================== 13:03:55.747431 | 5ed80cd6-855f-4183-9d20-a85bf6ac02fd ==============================
+[0m13:03:55.747431 [info ] [MainThread]: Running with dbt=1.12.3
+[0m13:03:55.763436 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Bamidele\\Documents\\manufact\\manufact-dbt\\qntproj', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt test --select stg_customers', 'log_path': 'C:\\Users\\Bamidele\\Documents\\manufact\\manufact-dbt\\qntproj\\logs'}
+[0m13:04:12.930239 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5ed80cd6-855f-4183-9d20-a85bf6ac02fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029395F8ADD0>]}
+[0m13:04:13.438257 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5ed80cd6-855f-4183-9d20-a85bf6ac02fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029387C05710>]}
+[0m13:04:13.443259 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m13:04:17.278302 [debug] [MainThread]: checksum: ace6cc19d752b2eede857364603196a4b3b33bbc94fcfd5ac723aa93c3192327, vars: {}, profile: qntproj, target: bigquery_dev, version: 1.12.3
+[0m13:04:18.366223 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m13:04:18.414038 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '5ed80cd6-855f-4183-9d20-a85bf6ac02fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002938AF22590>]}
+[0m13:04:30.918432 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.qntproj.mart
+[0m13:04:30.989574 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5ed80cd6-855f-4183-9d20-a85bf6ac02fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002938A577A50>]}
+[0m13:04:32.105333 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\manifest.json
+[0m13:04:32.127858 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\semantic_manifest.json
+[0m13:04:32.276029 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\osi_document.json
+[0m13:04:32.431063 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5ed80cd6-855f-4183-9d20-a85bf6ac02fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029397C4E350>]}
+[0m13:04:32.434065 [info ] [MainThread]: Found 11 models, 2 data tests, 10 sources, 561 macros
+[0m13:04:32.437066 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5ed80cd6-855f-4183-9d20-a85bf6ac02fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029397B69D90>]}
+[0m13:04:32.445068 [info ] [MainThread]: 
+[0m13:04:32.451063 [info ] [MainThread]: Concurrency: 2 threads (target='bigquery_dev')
+[0m13:04:32.457926 [info ] [MainThread]: 
+[0m13:04:32.486923 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m13:04:32.549017 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_seismic-gecko-487920-t3_qnt_staging'
+[0m13:04:32.568026 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:04:35.084298 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5ed80cd6-855f-4183-9d20-a85bf6ac02fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002939779B110>]}
+[0m13:04:35.087303 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:04:35.499190 [debug] [Thread-2 (]: Began running node test.qntproj.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m13:04:35.501190 [debug] [Thread-3 (]: Began running node test.qntproj.unique_stg_customers_customer_id.c7614daada
+[0m13:04:35.504191 [info ] [Thread-2 (]: 1 of 2 START test not_null_stg_customers_customer_id ........................... [RUN]
+[0m13:04:35.510191 [debug] [Thread-2 (]: Acquiring new bigquery connection 'test.qntproj.not_null_stg_customers_customer_id.e2cfb1f9aa'
+[0m13:04:35.512191 [debug] [Thread-2 (]: Began compiling node test.qntproj.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m13:04:35.506190 [info ] [Thread-3 (]: 2 of 2 START test unique_stg_customers_customer_id ............................. [RUN]
+[0m13:04:35.539831 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.qntproj.unique_stg_customers_customer_id.c7614daada'
+[0m13:04:35.574181 [debug] [Thread-3 (]: Began compiling node test.qntproj.unique_stg_customers_customer_id.c7614daada
+[0m13:04:35.727580 [debug] [Thread-3 (]: Writing injected SQL for node "test.qntproj.unique_stg_customers_customer_id.c7614daada"
+[0m13:04:35.752585 [debug] [Thread-2 (]: Writing injected SQL for node "test.qntproj.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m13:04:35.755580 [debug] [Thread-3 (]: Began executing node test.qntproj.unique_stg_customers_customer_id.c7614daada
+[0m13:04:35.791114 [debug] [Thread-2 (]: Began executing node test.qntproj.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m13:04:35.940334 [debug] [Thread-2 (]: Writing runtime sql for node "test.qntproj.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m13:04:35.934334 [debug] [Thread-3 (]: Writing runtime sql for node "test.qntproj.unique_stg_customers_customer_id.c7614daada"
+[0m13:04:35.945345 [debug] [Thread-2 (]: On test.qntproj.not_null_stg_customers_customer_id.e2cfb1f9aa: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "qntproj", "target_name": "bigquery_dev", "node_id": "test.qntproj.not_null_stg_customers_customer_id.e2cfb1f9aa"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from `seismic-gecko-487920-t3`.`qnt_staging`.`stg_customers`
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m13:04:35.951334 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:04:35.958337 [debug] [Thread-3 (]: On test.qntproj.unique_stg_customers_customer_id.c7614daada: /* {"app": "dbt", "dbt_version": "1.12.3", "profile_name": "qntproj", "target_name": "bigquery_dev", "node_id": "test.qntproj.unique_stg_customers_customer_id.c7614daada"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select customer_id as unique_field
+  from `seismic-gecko-487920-t3`.`qnt_staging`.`stg_customers`
+  where customer_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m13:04:35.965662 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m13:04:38.040902 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=seismic-gecko-487920-t3&j=bq:europe-west9:644f4800-afc5-428e-a191-3c956c5d53a1&page=queryresults
+[0m13:04:38.044148 [error] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=seismic-gecko-487920-t3&j=bq:europe-west9:644f4800-afc5-428e-a191-3c956c5d53a1&page=queryresults
+[0m13:04:38.098063 [debug] [Thread-3 (]: Database Error in test unique_stg_customers_customer_id (models\staging\schema.yml)
+  Not found: Table seismic-gecko-487920-t3:qnt_staging.stg_customers was not found in location europe-west9
+  compiled code at target\run\qntproj\models\staging\schema.yml\unique_stg_customers_customer_id.sql
+[0m13:04:38.109068 [error] [Thread-3 (]: 2 of 2 ERROR unique_stg_customers_customer_id .................................. [[31mERROR[0m in 2.57s]
+[0m13:04:38.175038 [debug] [Thread-3 (]: Finished running node test.qntproj.unique_stg_customers_customer_id.c7614daada
+[0m13:04:38.179040 [debug] [Thread-6 (]: Marking all children of 'test.qntproj.unique_stg_customers_customer_id.c7614daada' to be skipped because of status 'error'.  Reason: Database Error in test unique_stg_customers_customer_id (models\staging\schema.yml)
+  Not found: Table seismic-gecko-487920-t3:qnt_staging.stg_customers was not found in location europe-west9
+  compiled code at target\run\qntproj\models\staging\schema.yml\unique_stg_customers_customer_id.sql.
+[0m13:04:38.284405 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=seismic-gecko-487920-t3&j=bq:europe-west9:bfda777c-a2dd-40a4-9541-9c8dff47a2cb&page=queryresults
+[0m13:04:38.288399 [error] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=seismic-gecko-487920-t3&j=bq:europe-west9:bfda777c-a2dd-40a4-9541-9c8dff47a2cb&page=queryresults
+[0m13:04:38.324280 [debug] [Thread-2 (]: Database Error in test not_null_stg_customers_customer_id (models\staging\schema.yml)
+  Not found: Table seismic-gecko-487920-t3:qnt_staging.stg_customers was not found in location europe-west9
+  compiled code at target\run\qntproj\models\staging\schema.yml\not_null_stg_customers_customer_id.sql
+[0m13:04:38.328279 [error] [Thread-2 (]: 1 of 2 ERROR not_null_stg_customers_customer_id ................................ [[31mERROR[0m in 2.82s]
+[0m13:04:38.354641 [debug] [Thread-2 (]: Finished running node test.qntproj.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m13:04:38.358638 [debug] [Thread-6 (]: Marking all children of 'test.qntproj.not_null_stg_customers_customer_id.e2cfb1f9aa' to be skipped because of status 'error'.  Reason: Database Error in test not_null_stg_customers_customer_id (models\staging\schema.yml)
+  Not found: Table seismic-gecko-487920-t3:qnt_staging.stg_customers was not found in location europe-west9
+  compiled code at target\run\qntproj\models\staging\schema.yml\not_null_stg_customers_customer_id.sql.
+[0m13:04:38.367637 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:04:38.648966 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:04:38.651488 [debug] [MainThread]: Connection 'list_seismic-gecko-487920-t3_qnt_staging' was properly closed.
+[0m13:04:38.660421 [debug] [MainThread]: Connection 'test.qntproj.not_null_stg_customers_customer_id.e2cfb1f9aa' was properly closed.
+[0m13:04:38.665418 [debug] [MainThread]: Connection 'test.qntproj.unique_stg_customers_customer_id.c7614daada' was properly closed.
+[0m13:04:38.668424 [info ] [MainThread]: 
+[0m13:04:38.674417 [info ] [MainThread]: Finished running 2 data tests in 0 hours 0 minutes and 6.19 seconds (6.19s).
+[0m13:04:38.686205 [debug] [MainThread]: Command end result
+[0m13:04:39.481754 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\manifest.json
+[0m13:04:39.517773 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\semantic_manifest.json
+[0m13:04:39.564016 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\osi_document.json
+[0m13:04:39.635590 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Bamidele\Documents\manufact\manufact-dbt\qntproj\target\run_results.json
+[0m13:04:39.638588 [info ] [MainThread]: 
+[0m13:04:39.682093 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+[0m13:04:39.725964 [info ] [MainThread]: 
+[0m13:04:39.784420 [error] [MainThread]: [[31mERROR[0m]: in test unique_stg_customers_customer_id (models\staging\schema.yml)
+[0m13:04:39.854077 [error] [MainThread]:   Database Error in test unique_stg_customers_customer_id (models\staging\schema.yml)
+  Not found: Table seismic-gecko-487920-t3:qnt_staging.stg_customers was not found in location europe-west9
+  compiled code at target\run\qntproj\models\staging\schema.yml\unique_stg_customers_customer_id.sql
+[0m13:04:39.891431 [info ] [MainThread]: 
+[0m13:04:39.963965 [info ] [MainThread]:   compiled code at target\compiled\qntproj\models\staging\schema.yml\unique_stg_customers_customer_id.sql
+[0m13:04:40.082586 [info ] [MainThread]: 
+[0m13:04:40.172619 [error] [MainThread]: [[31mERROR[0m]: in test not_null_stg_customers_customer_id (models\staging\schema.yml)
+[0m13:04:40.229965 [error] [MainThread]:   Database Error in test not_null_stg_customers_customer_id (models\staging\schema.yml)
+  Not found: Table seismic-gecko-487920-t3:qnt_staging.stg_customers was not found in location europe-west9
+  compiled code at target\run\qntproj\models\staging\schema.yml\not_null_stg_customers_customer_id.sql
+[0m13:04:40.331221 [info ] [MainThread]: 
+[0m13:04:40.539289 [info ] [MainThread]:   compiled code at target\compiled\qntproj\models\staging\schema.yml\not_null_stg_customers_customer_id.sql
+[0m13:04:40.651418 [info ] [MainThread]: 
+[0m13:04:40.736811 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=0 NO-OP=0 REUSED=0 TOTAL=2
+[0m13:04:40.814588 [debug] [MainThread]: Command `dbt test` failed at 13:04:40.810586 after 46.34 seconds
+[0m13:04:40.818588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029395EB7650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002938C886810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002938C94C810>]}
+[0m13:04:40.821589 [debug] [MainThread]: Flushing usage events
+[0m13:04:42.065671 [debug] [MainThread]: An error was encountered while trying to flush usage events
