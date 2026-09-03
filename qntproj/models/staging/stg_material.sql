@@ -1,3 +1,4 @@
+{{config(materialized='view')}}
 with material_usage as (
     select *
     from {{ source('staging', 'material_usage') }}
